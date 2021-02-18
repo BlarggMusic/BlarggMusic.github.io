@@ -4,10 +4,14 @@ body{
     background-attachment: fixed;
     background-size: 100% 100%;
     color: #ffffff;
-    font-family: Tahoma, sans-serif;}
+    font-family: Tahoma, sans-serif;
+    overflow: hidden;}
 #wrapper{
     background-color: #fd9ae9;
-    border: 6px ridge #4993e6;}
+    border: 6px ridge #026afe;
+    overflow-y: auto;
+    height: 39em;}
+  }
 #album{
     background-color: #000;
     color: #fff;}
@@ -18,25 +22,26 @@ body{
 #album a:visited{
                 color: #235bd9;}
 #album a:hover{
-                color: #4993e6;}
+                color: #026afe;}
 nav {
     color: #000;
     background-color: #235bd9;
     font-family: Tahoma, sans-serif;
-    border: 7px ridge #4993e6;
+    border: 7px ridge #026afe;
     border-style: ridge none ridge none;
     padding: 0;
-    text-align: center;}
+    text-align: center;
+    position: sticky;}
 nav.album {
     color: #000;
     background-color: #ffffff;
     font-family: Tahoma, sans-serif;
-    border: 7px ridge #4993e6;
+    border: 7px ridge #026afe;
     border-style: ridge none none none;
     padding: 0;
     text-align: center;}
 nav li{
-    border-bottom: 7px ridge #4993e6;}
+    border-bottom: 7px ridge #026afe;}
 nav a{
     text-decoration: none;}
 nav a:link{
@@ -52,18 +57,18 @@ swag a:link{
 swag a:visited{
             color: #235bd9;}
 swag a:hover{
-            color: #4993e6;}
+            color: #3d8dfe;}
 table {
-    border: 4px ridge #4993e6;
+    border: 4px ridge #026afea;
     border-collapse: collapse;}
 td {
     padding: 0.5em;
-    border: 4px ridge #4993e6;
+    border: 4px ridge #026afe;
     text-align: center;}
 tr:nth-of-type(odd){
     background-color: #000;}
 footer {
-    border: 7px ridge #4993e6;
+    border: 7px ridge #026afe;
     border-style: ridge none none none;}
 dt {
     color: #ffffff; }
@@ -74,15 +79,31 @@ div.b {
     margin-left: auto;
     margin-right: auto;
     width: 25em}
+div.gallery {
+      margin: 10px;
+      border: 6px ridge #026afe;
+      float: left;
+      width: 28%;}
+div.gallery:hover {
+      border: 6px ridge #3d8dfe;}
+div.gallery img {
+      width: 100%;
+      height: auto;}
+div.desc {
+      padding: 15px;
+      text-align: center;}
 IMG.center {
     display: block;
     margin-left: auto;
     margin-right: auto}
-    table
-    {
-        margin-left: auto;
-        margin-right: auto;
-    }
+.top {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80.75%;}
+table{
+    margin-left: auto;
+    margin-right: auto;}
 .fix{
     position: fixed;
     bottom:0px;
@@ -106,8 +127,14 @@ IMG.center {
     top: 0;
     left: 0;
     z-index: 99;}
-    .welcome:hover .img-top {
-        display: inline;}
+.welcome:hover .img-top {
+    display: inline;}
+img.sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin: 0;
+    width: 80%;}
 @media (min-width:600px){
   nav ul {
     display: flex;
@@ -134,6 +161,9 @@ IMG.center {
   footer{
     grid-row: auto;
     grid-column: 1 / 5;}
+  #wrapper{
+    overflow-y: auto;
+    height: 39em;}
   }
 @media (min-width: 1024px){
   nav ul{
@@ -143,6 +173,8 @@ IMG.center {
   nav {}
   #wrapper{
     width: 80%;
+    height: 39em;
+    overflow-y: auto;
     margin: auto;
     min-width: 960px;
     max-width:2048px;}

@@ -1,26 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="../java/cursor/src/fairyDustCursor.js"></script>
+  <script async src="../java/cursor/swag.js"></script>
   <link rel="icon" href="../media/favicon.ico">
-  <img src="../media/musicline.gif" width="50%" height="" alt="Music"><img src="../media/musicline.gif" width="50%" height="" alt="Music">
   <meta charset="utf-8">
   <title>Blargg Music</title>
   <link rel="stylesheet" href="main.css">
 </head>
+<img class="top" src="../media/topmerch.png" width="" height="" alt="Header">
 <div id="wrapper">
 <body>
   <div class="a">
   <div id="top">
   <header>
+      <img src="../media/musicline.gif" width="50%" height="" alt="Music"><img src="../media/musicline.gif" width="50%" height="" alt="Music">
+      <br>
       <a href="home.html"><img src="../media/blargg.gif" alt="Blargg"></a>
-      <img src="../media/moon.gif" alt="Sailor Moon" class="center">
+      <script type="text/javascript">
+        var total_images = 30;
+        var random_number = Math.floor((Math.random()*total_images));
+        var random_img = null;
+        if (random_number < 29) {
+          random_img = '<img src="../media/blarggwave.gif" height="135px"alt="Blargg Waving" class="center">';}
+        else {
+          random_img = '<img src="../media/bargwave.gif" height="135px"alt="Barg Waving" class="center">';}
+        document.write(random_img);
+      </script>
     </header>
     <nav>
       <br>
       <b>
       <a href="home.html">Home</a> &nbsp;
       <a href="music.html">Music</a> &nbsp;
-      <a href="streaming.html">Streaming</a> &nbsp;
+      <a href="media.html">Media</a> &nbsp;
       <a href="merch.html">Merch</a> &nbsp;
       </b>
       <br>
@@ -41,43 +54,38 @@
       </h4>
       <a href="https://teespring.com/song-taking?tsmac=store&tsmic=blarggmusic&pid=14&cid=2537"><img src="../media/songtaking.gif" width="7%" height="7%" alt="Song Taking"></a>
       <a href="https://teespring.com/blargg-checkerboard?tsmac=store&tsmic=blarggmusic&pid=11&cid=360"><img src="../media/check.gif" width="10%" height="10%" alt="Checkerboard"></a>
-      <h1>Join the Blargg Fan Club!</h1>
-      <h3>
-      <form action="https://webdevbasics.net/scripts/pacific.php" method="post">
-        <label for="myName">*Name</label>
-        <input type="text" id="myName" name="myName" required="required">
-        <br><br>
-        <label for="myEmail">*E-Mail</label>
-        <input type="email" id="myEmail" name="myEmail" required="required">
-        <br><br>
-        <label for="myComments">Fave Blargg Song</label>
-        <textarea id="myComments" name="myComments" rows="1" cols="30" required="required"> </textarea>
-        <br><br>
-        <input type="submit" value="submit">
-        <br>
-      </form>
-      </h3>
+      <br>
+      <br>
     </main>
     <footer>
       <br>
         <small>
           <b>
-          Copyright © 2020 Blargg Music<br>
-          <swag><a href="<a href="mailto:blarggmusic@gmail.com> E-Mail Me!</a></swag>
+            <script type="text/javascript">
+              var total_images = 7;
+              var random_number = Math.floor((Math.random()*total_images));
+              var random_img = new Array();
+              random_img[0] = '<a href="mailto:blarggmusic@gmail.com"><img src="../media/email1.gif"></a>';
+              random_img[1] = '<a href="mailto:blarggmusic@gmail.com"><img src="../media/email1.gif"></a>';
+              random_img[2] = '<a href="mailto:blarggmusic@gmail.com"><img src="../media/email1.gif"></a>';
+              random_img[3] = '<a href="mailto:blarggmusic@gmail.com"><img src="../media/email2.gif"></a>';
+              random_img[4] = '<a href="mailto:blarggmusic@gmail.com"><img src="../media/email2.gif"></a>';
+              random_img[5] = '<a href="mailto:blarggmusic@gmail.com"><img src="../media/email2.gif"></a>';
+              random_img[6] = '<a href="mailto:blarggmusic@gmail.com"><img src="../media/email3.gif"></a>';
+              document.write(random_img[random_number]);
+            </script>
           <br>
           <br>
-          <img src="../media/../media/../media/../media/construction.gif" width="" height="" alt="Under Construction">
-          <img src="../media/../media/../media/sonic.gif" width="" height="" alt="Sonic">
+          Copyright © 2020 Blargg Music
+          <br>
+          <br>
+          <img src="../media/construction.gif" width="" height="" alt="Under Construction">
+          <img src="../media/sonic.gif" width="" height="" alt="Sonic">
           </b>
         </small>
     </footer>
     </body>
   </div>
   </div>
-  <br>
-  <img src="../media/../media/musicline.gif" width="50%" height="" alt="Music"><img src="../media/musicline.gif" width="50%" height="" alt="Music">
-  <br>
-  <br>
-  <br>
   <img src="../media/taskbar.png" class="fix"/>
   </html>
