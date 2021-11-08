@@ -1,3 +1,8 @@
+html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;}
 body{
     background-image: url(../media/awesome.png);
     background-repeat: no-repeat;
@@ -5,7 +10,11 @@ body{
     background-size: 100% 100%;
     color: #ffffff;
     font-family: Tahoma, sans-serif;
-    overflow: hidden;}
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;}
 #wrapper{
     background-color: #fd9ae9;
     border: 6px ridge #026afe;
@@ -23,6 +32,8 @@ body{
                 color: #235bd9;}
 #album a:hover{
                 color: #026afe;}
+#knuckles{
+    background-image: image("../media/cobbestone.png");}
 nav {
     color: #000;
     background-color: #235bd9;
