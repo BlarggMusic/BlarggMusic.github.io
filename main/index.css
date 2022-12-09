@@ -1,7 +1,7 @@
 body{
-    background-image: url(../media/login.png);
+    background-image: url(../media/pixel.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: auto;
     color: #ffffff;
     font-family: Tahoma, sans-serif;}
