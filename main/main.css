@@ -24,9 +24,9 @@ body{
 #album a{
             text-decoration: none;}
 #album a:link{
-                color: #235bd9;}
+                color: #8998e3;}
 #album a:visited{
-                color: #235bd9;}
+                color: #8998e3;}
 #album a:hover{
                 color: #026afe;}
 nav {
@@ -59,21 +59,21 @@ nav a:hover{
 swag a{
         text-decoration: none;}
 swag a:link{
-            color: #235bd9;}
+            color: #8998e3;}
 swag a:visited{
-            color: #235bd9;}
+            color: #8998e3;}
 swag a:hover{
             color: #3d8dfe;}
 p{
   margin-left: 70px;
   margin-right: 70px;}
 table {
-    border: 4px ridge #026afea;
+    border: 4px ridge #8998e3;
     border-collapse: collapse;
     background-color: #000;}
 td {
     padding: 0.5em;
-    border: 4px ridge #026afe;
+    border: 4px ridge #8998e3;
     text-align: center;}
 footer {
     background-image: url(../media/bliss.png);
@@ -110,6 +110,15 @@ IMG.center {
     display: block;
     margin-left: auto;
     margin-right: auto}
+.grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      padding: 10px;}
+.grid-item {
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      font-size: 30px;
+      text-align: center;}
 .top {
     display: block;
     margin-left: auto;
@@ -150,7 +159,7 @@ img.sticky{
     margin: 0;
     width: 80%;}
 img.border {
-    border: 4px ridge #026afe;}
+    border: 4px ridge #8998e3;}
 @media (min-width:600px){
   div.gallery {
     width: 75%;}
