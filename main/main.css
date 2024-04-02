@@ -160,6 +160,8 @@ img.sticky{
     width: 80%;}
 img.border {
     border: 4px ridge #8998e3;}
+video.border {
+    border: 4px ridge #8998e3;}
 @media (min-width:600px){
   div.gallery {
     width: 75%;}
