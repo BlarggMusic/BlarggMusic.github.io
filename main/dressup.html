@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    #mydiv {
+      position: absolute;
+      z-index: 9;
+      text-align: center;}
+    #mydivheader {
+      padding: 10px;
+      cursor: move;
+      z-index: 10;}
+    </style>
+<head>
+  <script src="../java/cursor/src/fairyDustCursor.js"></script>
+  <script async src="../java/cursor/swag.js"></script>
+  <link rel="icon" href="../media/favicon.ico">
+  <meta charset="utf-8">
+  <title>Blargg Music</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="a">
+  <div id="top">
+  <header>
+    <img src="../media/musicline.gif" width="50%" height="" alt="Music"><img src="../media/musicline.gif" width="50%" height="" alt="Music">
+    <br>
+    <br>
+    <a href="home.html"><img src="../media/logo2.png" width="450" alt="Blargg"></a>
+    <script type="text/javascript">
+      var total_images = 100;
+      var random_number = Math.floor((Math.random()*total_images));
+      var random_img = null;
+      if (random_number < 99) {
+        random_img = '<img src="../media/blarggwave.gif" height="175px"alt="Blargg Waving" class="center">';}
+      else {
+        random_img = '<img src="../media/bargwave.gif" height="162px"alt="Barg Waving" class="center">';}
+      document.write(random_img);
+    </script>
+  </header>
+    <nav>
+      <br>
+      <b>
+      <a href="home.html">Home</a> &nbsp;
+      <a href="music.html">Music</a> &nbsp;
+      <a href="media.html">Media</a> &nbsp;
+      <a href="merch.html">Merch</a> &nbsp;
+      </b>
+      <br>
+      <br>
+    </nav>
+    <main>
+      <h1>Draggable DIV Element</h1>
+
+      <p>Click and hold the mouse button down while moving the DIV element</p>
+
+        <div id="mydiv">
+          <div id="mydivheader"><img src="../media/merch/kittyslatt.png" width="40%"></div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <script>
+          //Make the DIV element draggagle:
+          dragElement(document.getElementById("mydiv"));
+          
+          function dragElement(elmnt) {
+            var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+            if (document.getElementById(elmnt.id + "header")) {
+              /* if present, the header is where you move the DIV from:*/
+              document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+            } else {
+              /* otherwise, move the DIV from anywhere inside the DIV:*/
+              elmnt.onmousedown = dragMouseDown;
+            }
+          
+            function dragMouseDown(e) {
+              e = e || window.event;
+              e.preventDefault();
+              // get the mouse cursor position at startup:
+              pos3 = e.clientX;
+              pos4 = e.clientY;
+              document.onmouseup = closeDragElement;
+              // call a function whenever the cursor moves:
+              document.onmousemove = elementDrag;
+            }
+          
+            function elementDrag(e) {
+              e = e || window.event;
+              e.preventDefault();
+              // calculate the new cursor position:
+              pos1 = pos3 - e.clientX;
+              pos2 = pos4 - e.clientY;
+              pos3 = e.clientX;
+              pos4 = e.clientY;
+              // set the element's new position:
+              elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+              elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+            }
+          
+            function closeDragElement() {
+              /* stop moving when mouse button is released:*/
+              document.onmouseup = null;
+              document.onmousemove = null;
+            }
+          }
+          </script>
+    </main>
+    <footer>
+      <br>
+        <small>
+          <b>
+            <script type="text/javascript">
+              var total_images = 7;
+              var random_number = Math.floor((Math.random()*total_images));
+              var random_img = new Array();
+              random_img[0] = '<a href="mailto:blarggmusic@gmail.com"><img src="../media/email1.gif"></a>';
+              random_img[1] = '<a href="mailto:blarggmusic@gmail.com"><img src="../media/email1.gif"></a>';
+              random_img[2] = '<a href="mailto:blarggmusic@gmail.com"><img src="../media/email1.gif"></a>';
+              random_img[3] = '<a href="mailto:blarggmusic@gmail.com"><img src="../media/email2.gif"></a>';
+              random_img[4] = '<a href="mailto:blarggmusic@gmail.com"><img src="../media/email2.gif"></a>';
+              random_img[5] = '<a href="mailto:blarggmusic@gmail.com"><img src="../media/email2.gif"></a>';
+              random_img[6] = '<a href="mailto:blarggmusic@gmail.com"><img src="../media/email3.gif"></a>';
+              document.write(random_img[random_number]);
+            </script>
+          <br>
+          <br>
+          <p>Website by Blargg Music - <script>document.write(new Date().getFullYear())</script></p>
+          <a href="https://www.instagram.com/sailorblargg/"><img src="../media/Instagram.png" width="30" height="30" alt="Instagram"></a><a href="https://bsky.app/profile/blarggmusic.com"><img src="../media/Bluesky.png" width="30" height="30" alt="BlueSky"></a><a href="https://www.tiktok.com/@sailorblargg"><img src="../media/tiktok.png" width="30" height="30" alt="TikTok"></a><a href="https://www.tumblr.com/blog/sailorblargg"><img src="../media/Tumblr.png" width="30" height="30" alt="Tumblr"></a>
+          <br>
+          <br>
+          <img src="../media/knuckles.gif" width="" height="56" alt="Knuckles">
+          <img src="../media/construction.gif" width="" height="" alt="Under Construction">
+          <img src="../media/sonic.gif" width="" height="" alt="Sonic">
+          <br>
+          <br>
+          <a href="http://88x31.nl/download.html"><img src="../media/8831/88x31.gif" alt="88x31"></a>
+          <a href="https://www.paypal.com/donate/?hosted_button_id=GC4P9RCYCGQTS"><img src="../media/8831/donate.gif" alt="Donate"></a>
+          <a href="https://www.w3schools.com/html/default.asp"><img src="../media/8831/html.gif" alt="Learn HTML"></a>
+          <a href="https://code.visualstudio.com/Download"><img src="../media/8831/vstudio.gif" alt="Visual Studio Code"></a>
+          <a href="https://pbs.twimg.com/media/FkI1CMbWAAEy05Y.jpg"><img src="../media/8831/queer.gif" alt="Certified Transbian"></a>
+          <a href="https://www.gimp.org/"><img src="../media/8831/gimp.png" alt="Made With Gimp"></a>
+          <a href="https://github.com/BlarggMusic/BlarggMusic.github.io"><img src="../media/8831/github.gif" alt="Hosted by GitHub"></a>
+          <a href="https://github.com/Open-Shell/Open-Shell-Menu"><img src="../media/8831/windows.gif" alt="Made With Windows"></a>
+          <a href="https://youtu.be/xNH43Xf24nQ?si=2T-Ug6Lbpo4YM5zo"><img src="../media/8831/clickhere.gif" alt="Click Here!"></a>
+          <br>
+          <img src="../media/musicline.gif" width="50%" height="" alt="Music"><img src="../media/musicline.gif" width="50%" height="" alt="Music">
+          </b>
+        </small>
+    </footer>
+    </body>
+  </div>
+  </div>
+  </html>

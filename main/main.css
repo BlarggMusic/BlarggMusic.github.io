@@ -79,7 +79,7 @@ footer {
     background-image: url(../media/bliss.png);
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size: 100%;
+    background-size: auto;
     background-position: center;;
     border: 7px ridge #8998e3;
     border-style: ridge none none none;}
